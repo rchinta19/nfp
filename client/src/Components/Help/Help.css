@@ -1,0 +1,10 @@
+/*Help Home page styles*/
+
+/* Introduction Heading*/
+#introducution{
+    font-weight:'bold' !important;
+    padding-bottom:"20px" !important;
+    font-size:"24" !important;
+    font-family:'Helvetica Neue' !important;
+    background-color: black;
+}

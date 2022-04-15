@@ -1,0 +1,87 @@
+/*styling for page div for alignment for next and previous buttons*/
+.pages{
+    float:right;
+    margin: 1rem;
+}
+
+/* styling for main div defectlog */
+.defecttable{
+    width: 89vw;
+  height: 55vh;
+ background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0.2rem 0.2rem #003e6129;
+  border: 1px solid #e4e4e4;
+  border-radius: 1rem;
+  opacity: 1;
+  padding: 1rem 1rem 1rem 1rem;
+  align-content: center;
+  margin:  1rem; 
+  scroll-behavior: smooth;
+  overflow: scroll;
+  white-space: nowrap;
+  scroll-behavior: auto;
+  overflow-y: scroll;
+ 
+}
+
+/* styling for next page and previous page buttons*/
+.pagebutton{
+    height:5vh;
+    width: 8vw;
+    background-color: #0f206c;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 0px;
+}
+
+/* styling for headers in defectlog table*/
+.thf {
+    color: #0f206c;
+    font-size: 1rem;
+    padding: 1rem 1rem 0.3rem 2rem;
+    justify-content: space-evenly;
+    font-weight: bold;
+    font-stretch: 1rem;
+    text-align: center !important;
+    width: 12vw;
+    border-bottom: 1px solid #212121;
+  }
+
+  /*styling for data in defectlog table*/
+  .tdf{
+    color: black;
+    font-size: 0.8rem;
+    padding: 1rem 1rem 0.3rem 2rem;
+    justify-content: space-evenly;
+    font-weight: bold;
+    text-align: center !important;
+    width: 12vw;
+   
+  }
+
+/*styling for image in defectlog table*/
+img.dil {
+border: 1px solid #ddd; 
+   border-radius: 4px;  
+   padding: 5px; 
+   width: 30px; 
+   }  
+ 
+/*styling for adding colors for even rows in defectlog table*/
+/* tr:nth-child(odd) {
+    background-color: lightblue;
+} */
+
+/*styling for export to csv button*/
+.csvexport{
+    background-color: #0f206c;
+    color: white;
+}
+
+/*styling for export to excel button*/
+.excelexport{
+    margin-right: 10px;
+    background-color: #0f206c;
+    color:white;
+}

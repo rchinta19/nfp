@@ -1,0 +1,79 @@
+.App {
+  /* text-align: center; */
+}
+
+img.nfpc-logo {
+  width: 92px !important;
+  height: 49px !important;
+  /* margin-left: 10px; */
+  /* padding:4px; */
+  margin:0.5rem !important;
+  border:none;
+  border-radius: none;
+}
+img.appstek-logo {
+  width: 180px !important;
+  height: 46px !important;
+  border-right: 2px solid black !important;
+  margin:0.5rem !important;
+  /* margin-left: 50px; */
+  padding: 8px !important;
+  border: none;
+  border-radius: none;
+}
+
+div.logos {
+  /* width: 70%; */
+ /* float: left; */
+ /* margin-right: rem; */
+ /* border-right: 2px solid black; */
+}
+.MuiPaper-root {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background-color: #ffffff !important;
+}
+.nav-tab {
+  /* border: 2px solid black; */
+  height: 100vh;
+}
+div.search-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 27px;
+  align-items: center;
+  color: black;
+}
+.search-icons > svg {
+  font-size: 30px;
+  color: #111111;
+  opacity: 0.8;
+}
+.search-icon {
+  /* color: black; */
+  /* background-color: black; */
+}
+.nav-content {
+  background-color: #eeeeee;
+  width: 100%;
+}
+a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+
+/*DASHBOARD SCREEN LAYOUT*/
+
+
+/**/
+
+
+/*LOGIN SCREEN LAYOUT*/
+
+/**/
