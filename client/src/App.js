@@ -9,36 +9,38 @@ import {
 import Login from "../src/Components/login/Login";
 import { useState, useEffect } from "react";
 import DashboardHome from "./Components/Index/DashboardHome";
-import {useSelector} from 'react-redux'
+import { useSelector } from "react-redux";
 
 function App() {
-  let debug = false;
+  // let debug = false;
   // const dispatch = useDispatch();
   // const [x, settingx] = useState(true);
-  let userPresent = useSelector(state => state.userLog.UserPresent)
-  if(debug) console.log(userPresent)
-  let existing_user = localStorage.getItem("userPresent")
-  if(debug) console.log(existing_user)
+  let userPresent = useSelector((state) => state.userLog.UserPresent);
+  console.log(userPresent);
+
+  let existing_user = localStorage.getItem("userPresent");
+
   const [isLoggedIn, setIsLoggedIn] = useState(existing_user);
-  if(debug) console.log(isLoggedIn)
+
   // const isLogedHandler = (val) => {
   //   setIsLoggedIn(val)
   // };
   // if(debug) console.log(location.pathname)
-  useEffect(()=>{
-    setIsLoggedIn(localStorage.getItem("userPresent"))
-  },[existing_user, isLoggedIn, userPresent]);
+  useEffect(() => {
+    setIsLoggedIn(localStorage.getItem("userPresent"));
+  }, [userPresent]);
 
   // const p = useSelector(state=>state.userLog.currentPath)
   // if(debug) console.log(p)
- 
-  return (  
+
+  return (
     <Router>
       <Switch>
         {/* try simplyfing this*/}
+        {/* <Route exact path="/login" component={<Login />} /> */}
         <SecuredRoute
           path="/homeDashboard"
-          component={DashboardHome} 
+          component={DashboardHome}
           auth={isLoggedIn}
         />
         <Route to="/login">

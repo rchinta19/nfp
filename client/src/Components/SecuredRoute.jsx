@@ -6,7 +6,7 @@ const SecuredRoute = ({ auth, component: Component, ...rest }) => {
     <Route
       {...rest}
       component={(props) => {
-        return auth ? <Component {...props} /> : <Redirect to="/" />;
+        return auth ? <Component {...props} /> : <Redirect to="/login" />;
       }}
     />
   );
